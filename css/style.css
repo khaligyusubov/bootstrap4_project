@@ -1,0 +1,132 @@
+/* Custom CSS for Khalig Yusubov's Personal Website */
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 0 auto 30px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 70px; /* To account for fixed navbar */
+}
+
+/* About Section */
+.profile-img {
+    max-width: 250px;
+    margin: 0 auto 20px;
+    display: block;
+    border: 5px solid #f8f9fa;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills Section */
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #3498db;
+}
+
+.skill-item h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Portfolio Section */
+.portfolio-item {
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #2980b9;
+    color: white;
+    transform: scale(1.1);
+}
+
+.contact-form .form-control {
+    border-radius: 0;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border-color: #3498db;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 80vh;
+    }
+    
+    .profile-img {
+        max-width: 200px;
+    }
+}
